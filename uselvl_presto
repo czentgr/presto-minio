@@ -82,6 +82,7 @@ cp -r ${PRESTO_TOP}/presto-server/target/presto-server-*-SNAPSHOT/presto-server-
 cp ${PRESTO_TOP}/presto-cli/target/presto-cli-*-SNAPSHOT-executable.jar ${PRESTO_HOME}/bin/presto-cli
 cp ${SCRIPT_DIR}/bin/startHiveQueryRunner.sh ${PRESTO_HOME}/bin/startHiveQueryRunner.sh
 cp ${SCRIPT_DIR}/bin/startPrestoVeloxWorker.sh ${PRESTO_HOME}/bin/startPrestoVeloxWorker.sh
+cp ${SCRIPT_DIR}/bin/runPrestoE2ETest.sh ${PRESTO_HOME}/bin/runPrestoE2ETest.sh
 ln -s ${PRESTO_TOP}/presto-server/target/presto-server-*-SNAPSHOT/presto-server-*-SNAPSHOT/lib ${PRESTO_HOME}/lib
 ln -s ${PRESTO_TOP}/presto-server/target/presto-server-*-SNAPSHOT/presto-server-*-SNAPSHOT/plugin ${PRESTO_HOME}/plugin
 ln -s ${PRESTO_TOP}/presto-server/target/presto-server-*-SNAPSHOT/presto-server-*-SNAPSHOT/NOTICE ${PRESTO_HOME}/NOTICE
