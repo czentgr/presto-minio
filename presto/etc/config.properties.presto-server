@@ -1,3 +1,4 @@
+presto.version=testversion
 coordinator=true
 node-scheduler.include-coordinator=true
 http-server.http.port=8081

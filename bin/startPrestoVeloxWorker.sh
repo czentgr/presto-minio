@@ -1,5 +1,12 @@
 #!/bin/sh
 
+# On Mac make sure DYLD_LIBRARY_PATH points to /usr/local/lib
+# Mac M1s have had issues with finding the libantlr because this path is not searched.
+UNAME=`uname`
+if [[ ${UNAME} =~ "Darwin" && ! ${DYLD_LIBRARY_PATH} =~ "/usr/local/lib" ]]; then
+  export DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH:/usr/local/lib
+fi
+
 # Check PRESTO_TOP
 if [ -z "${PRESTO_TOP}" ]; then
     echo "Set PRESTO_TOP environment variable."
