@@ -1,2 +1,2 @@
-node.environment=test
+node.environment=testing
 datanode.id=presto
