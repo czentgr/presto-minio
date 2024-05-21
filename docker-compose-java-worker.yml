@@ -55,8 +55,8 @@ services:
       - minio
       - hadoop
     environment:
-      - AWS_ACCESS_KEY=FEEF05540F5D8BE7EB62
-      - AWS_SECRET_ACCESS_KEY=2509758e5a6160ddf8c3014651b64006eec5213a
+      - AWS_ACCESS_KEY=minioadmin
+      - AWS_SECRET_ACCESS_KEY=minioadmin
     healthcheck:
       test: ["CMD", "curl", "-f", "http://172.19.0.4:8080"]
       interval: 5m
@@ -90,8 +90,8 @@ services:
       - minio
       - hadoop
     environment:
-      - AWS_ACCESS_KEY=FEEF05540F5D8BE7EB62
-      - AWS_SECRET_ACCESS_KEY=2509758e5a6160ddf8c3014651b64006eec5213a
+      - AWS_ACCESS_KEY=minioadmin
+      - AWS_SECRET_ACCESS_KEY=minioadmin
     networks:
       presto:
         ipv4_address: 172.19.0.11
