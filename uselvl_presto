@@ -76,7 +76,7 @@ rm ${PRESTO_HOME}/etc/config.properties.presto-server \
 # Copy in bin dir (needed because the launcher will look at the config based on its actual location).
 # Copy in the presto-cli to communicate with the presto server.
 # Link in lib and other files.
-cp -r ${PRESTO_TOP}/presto-server/target/presto-server-*-SNAPSHOT/presto-server-*-SNAPSHOT/bin ${PRESTO_HOME}/bin
+cp -r ${PRESTO_TOP}/presto-server/target/presto-server-*-SNAPSHOT/bin ${PRESTO_HOME}/bin
 cp ${PRESTO_TOP}/presto-cli/target/presto-cli-*-SNAPSHOT-executable.jar ${PRESTO_HOME}/bin/presto-cli
 cp ${SCRIPT_DIR}/bin/startHiveQueryRunner.sh ${PRESTO_HOME}/bin/startHiveQueryRunner.sh
 cp ${SCRIPT_DIR}/bin/startPrestoVeloxWorker.sh ${PRESTO_HOME}/bin/startPrestoVeloxWorker.sh
