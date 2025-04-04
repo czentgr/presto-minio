@@ -48,12 +48,12 @@ rm -rf ${PRESTO_HOME}/README.txt
 # Copy in bin dir (needed because the launcher will look at the config based on its actual location).
 # Copy in the presto-cli to communicate with the presto server.
 # Link in lib and other files.
-cp -r ${PRESTO_TOP}/presto-server/target/presto-server-*-SNAPSHOT/presto-server-*-SNAPSHOT/bin ${PRESTO_HOME}/bin
+cp -r ${PRESTO_TOP}/presto-server/target/presto-server-*-SNAPSHOT/bin ${PRESTO_HOME}/bin
 cp -r ${PRESTO_TOP}/presto-cli/target/presto-cli-*-SNAPSHOT-executable.jar ${PRESTO_HOME}/bin/presto-cli
-ln -s ${PRESTO_TOP}/presto-server/target/presto-server-*-SNAPSHOT/presto-server-*-SNAPSHOT/lib ${PRESTO_HOME}/lib
-ln -s ${PRESTO_TOP}/presto-server/target/presto-server-*-SNAPSHOT/presto-server-*-SNAPSHOT/plugin ${PRESTO_HOME}/plugin
-ln -s ${PRESTO_TOP}/presto-server/target/presto-server-*-SNAPSHOT/presto-server-*-SNAPSHOT/NOTICE ${PRESTO_HOME}/NOTICE
-ln -s ${PRESTO_TOP}/presto-server/target/presto-server-*-SNAPSHOT/presto-server-*-SNAPSHOT/README.txt ${PRESTO_HOME}/README.txt
+ln -s ${PRESTO_TOP}/presto-server/target/presto-server-*-SNAPSHOT/lib ${PRESTO_HOME}/lib
+ln -s ${PRESTO_TOP}/presto-server/target/presto-server-*-SNAPSHOT/plugin ${PRESTO_HOME}/plugin
+ln -s ${PRESTO_TOP}/presto-server/target/presto-server-*-SNAPSHOT/NOTICE ${PRESTO_HOME}/NOTICE
+ln -s ${PRESTO_TOP}/presto-server/target/presto-server-*-SNAPSHOT/README.txt ${PRESTO_HOME}/README.txt
 
 
 echo "uselvl_presto complete in ${PRESTO_HOME}"
